@@ -30,7 +30,7 @@ for(var i = 0; i < pacientes.length; i++){
     
     if (alturaEhValido && pesoEhValido) {
         var imc = peso / (altura * altura);
-        tdimc.textContent = imc.toFixed(2);
+        tdimc.textContent = imc.toFixed(3);
     }
 }
 
