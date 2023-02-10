@@ -13,6 +13,8 @@ botaoAdicionar.addEventListener('click', (event) => {
 
     tabela.appendChild(pacienteTr);
 
+    form.reset();
+
 });
 
 function resgatandoDados(form) {
@@ -23,6 +25,8 @@ function resgatandoDados(form) {
         gordura: form.gordura.value,
         imc: calculaImc(form.peso.value, form.altura.value)
     }
+
+    return paciente;
 }
 
 function montaTr(paciente) {
